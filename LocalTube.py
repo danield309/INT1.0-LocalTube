@@ -1,21 +1,22 @@
 from pytube import YouTube
 from tkinter import *
 
-# Handles user input
-link = input("Enter YT video link: ")
-yt = YouTube(link)
+class LocalTubeGUI:
+    def __init__(self, master):
+        self.master = master
+        master.title("LocalTube")
 
-# Video Title
-print("Title of video: ",yt.title)
+        Label(master, text="LocalTube").pack()
 
-# Number of views of video
-print("Number of views: ",yt.views)
+        # Enter youtube video URL here
 
-# Length of video
-print("Length of video: ",yt.length, "seconds")
+        # Dropdown menu option
 
-# Description of video
-print("Description: ",yt.description)
+        # Download after selecting menu option
 
-# Video Rating
-print("Ratings: ",yt.rating)
+        Button(master, text="Exit Program", command=master.quit).pack()
+
+root = Tk()
+root.geometry("1000x700")
+my_gui = LocalTubeGUI(root)
+root.mainloop()
