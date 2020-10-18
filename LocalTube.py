@@ -56,7 +56,7 @@ LinkInput = Entry(root,width=50,textvariable=LinkInputVar)
 LinkInput.grid()
 
 # Error msg if unknown link is used
-LinkError = Label(root,text="Error: ",fg="red",bg="white",font=("Helvetica",10,"bold"))
+LinkError = Label(root,text="",fg="red",bg="white",font=("Helvetica",10,"bold"))
 LinkError.grid()
 
 # Video save options label
@@ -68,7 +68,7 @@ SaveInput = Button(root,width=20,text="Select Download Location",bg="red",comman
 SaveInput.grid()
 
 # Error msg if no path selected
-PathError = Label(root,text="error select download location", fg="black",bg="white", font=("Helvetica",10,"bold"))
+PathError = Label(root,text="select download location before downloading! ", fg="red",bg="white", font=("Helvetica",10,"bold"))
 PathError.grid()
 
 # Quality label
