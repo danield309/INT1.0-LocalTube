@@ -2,10 +2,10 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import filedialog
 from pytube import YouTube
-
+# Importing modules needed / pip3 install pytube
 Folder_Name = ""
 
-# File Location
+# File Location function
 def openLocation():
     global Folder_Name
     Folder_Name = filedialog.askdirectory()
@@ -14,7 +14,7 @@ def openLocation():
     else:
         PathError.config(text="Error select a file location",fg="red")
 
-# Donwload video
+# Donwload video function
 def DownloadVideo():
     choice = qualityChoices.get()
     url = LinkInput.get()
@@ -39,7 +39,7 @@ def DownloadVideo():
     # Download function
     select.download(Folder_Name)
     LinkError.config(text="Download Completed 100%")
-
+# Tkinter GUI
 root = Tk()
 root.title("LocalTube")
 root.geometry("350x350")
@@ -75,7 +75,7 @@ PathError.grid()
 QualitySelect = Label(root,text="Select download quality",bg="white",font=("Helvetica",15,"bold"))
 QualitySelect.grid()
 
-#combobox
+# Combobox 
 choices = ["720p","144p","Only Audio"]
 qualityChoices = ttk.Combobox(root,values=choices)
 qualityChoices.grid()
