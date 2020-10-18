@@ -12,9 +12,9 @@ def openLocation():
     if(len(Folder_Name) > 1):
         PathError.config(text=Folder_Name,fg="blue")
     else:
-        PathError.config(text="Error select a file location",fg="black",bg="red")
+        PathError.config(text="Error select a file location",fg="red")
 
-#donwload video
+# Donwload video
 def DownloadVideo():
     choice = qualityChoices.get()
     url = LinkInput.get()
@@ -36,18 +36,18 @@ def DownloadVideo():
            LinkError.config(text="Paste Link again!!",fg="red")
 
 
-    #download function
+    # Download function
     select.download(Folder_Name)
-    LinkError.config(text="Download Completed!!")
+    LinkError.config(text="Download Completed 100%")
 
 root = Tk()
 root.title("LocalTube")
 root.geometry("350x350")
-root.configure(bg='red')
+root.configure(bg='white')
 root.columnconfigure(0, weight=1)
 
 #Link label
-LinkLabel =  Label(root, text="Enter YouTube URL below!",bg="red",font=("Helvetica",15,"bold"))
+LinkLabel =  Label(root, text="Enter YouTube URL below!",bg="white",font=("Helvetica",15,"bold"))
 LinkLabel.grid()
 
 # Link input
@@ -56,11 +56,11 @@ LinkInput = Entry(root,width=50,textvariable=LinkInputVar)
 LinkInput.grid()
 
 # Error msg if unknown link is used
-LinkError = Label(root,text="error unknown link",fg="black",bg="red",font=("Helvetica",10,"bold"))
+LinkError = Label(root,text="Error: ",fg="red",bg="white",font=("Helvetica",10,"bold"))
 LinkError.grid()
 
 # Video save options label
-SaveLabel = Label(root,text="Video save options:",bg="red",font=("Helvetica",15,"bold"))
+SaveLabel = Label(root,text="Video save options:",bg="white",font=("Helvetica",15,"bold"))
 SaveLabel.grid()
 
 # File path browse button
@@ -68,11 +68,11 @@ SaveInput = Button(root,width=20,text="Select Download Location",bg="red",comman
 SaveInput.grid()
 
 # Error msg if no path selected
-PathError = Label(root,text="error select download location", fg="black",bg="red", font=("Helvetica",10,"bold"))
+PathError = Label(root,text="error select download location", fg="black",bg="white", font=("Helvetica",10,"bold"))
 PathError.grid()
 
 # Quality label
-QualitySelect = Label(root,text="Select download quality",bg="red",font=("Helvetica",15,"bold"))
+QualitySelect = Label(root,text="Select download quality",bg="white",font=("Helvetica",15,"bold"))
 QualitySelect.grid()
 
 #combobox
@@ -85,7 +85,7 @@ downloadbtn = Button(root,text="Download",width=10,fg="red",command=DownloadVide
 downloadbtn.grid()
 
 # Dev Info
-devLabel = Label(root,bg="red",text="Made by Daniel Duque using Python & Tkinter",font=("Helvetica",15,"bold"))
+devLabel = Label(root,bg="white",text="Made by Daniel Duque using Python & Tkinter",font=("Helvetica",15,"bold"))
 devLabel.grid()
 
 root.mainloop()
