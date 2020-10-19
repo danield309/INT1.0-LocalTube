@@ -8,7 +8,11 @@ How to run this program:
 2. Run this repo using terminal or your text editor
 3. Once you run the code, a window will open with LocalTube running
 4. Paste the link of the YouTube Video you wish to download
+![alt text](https://github.com/danield309/LocalTube/blob/main/images/Step%201.png)
 5. Select where you would like the video to be downloaded on your machine
+![alt text](https://github.com/danield309/LocalTube/blob/main/images/Step%202.png)
 6. Select quality or format you would like to be downloaded
-7. Click download.. wait for "Download Completed 100%" to appear at the top of the window
+![alt text](https://github.com/danield309/LocalTube/blob/main/images/Step%203.png)
+7. Click the download button.. wait for "Download Completed 100%" to appear at the top of the window
+![alt text](https://github.com/danield309/LocalTube/blob/main/images/Step%204.png)
 8. Navigate to where you specified the download location and enjoy your content locally!
