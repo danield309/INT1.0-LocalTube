@@ -60,7 +60,7 @@ LinkError = Label(root,text="",fg="red",bg="white",font=("Helvetica",10,"bold"))
 LinkError.grid()
 
 # Video save options label
-SaveLabel = Label(root,text="Video save options:",bg="white",font=("Helvetica",15,"bold"))
+SaveLabel = Label(root,text="Video save location options:",bg="white",font=("Helvetica",15,"bold"))
 SaveLabel.grid()
 
 # File path browse button
@@ -68,11 +68,11 @@ SaveInput = Button(root,width=20,text="Select Download Location",bg="red",comman
 SaveInput.grid()
 
 # Error msg if no path selected
-PathError = Label(root,text="select download location before downloading! ", fg="red",bg="white", font=("Helvetica",10,"bold"))
+PathError = Label(root,text="Select download location before downloading!", fg="red",bg="white", font=("Helvetica",10,"bold"))
 PathError.grid()
 
 # Quality label
-QualitySelect = Label(root,text="Select download quality",bg="white",font=("Helvetica",15,"bold"))
+QualitySelect = Label(root,text="Download options",bg="white",font=("Helvetica",15,"bold"))
 QualitySelect.grid()
 
 # Combobox 
